@@ -5,7 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>吾族</title>
-<meta name="referrer" content="never"> <!--QQ空间引入-->
 <style>
   .menu {
     width: 200px;
@@ -18,7 +17,7 @@
   }
   .menu-content {
     display: none;
-    padding: 10px;
+    padding: 10px;/*元素内边距宽*/
     background-color: #ddd;
   }
 .gaoyangjiujia{
@@ -36,10 +35,6 @@
 <!--切割线-->
 <p class="gaoyangjiujia" align="center">高阳旧家</p>
 <h1><p align="center">吾族工具箱</p></h1>
-<p align="center">
-    <button>
-        <h3><a href="https://mym04.github.io/">李府</a></h3>
-    </button>
 <div class="menu">
   <div class="menu-item" onclick="toggleMenu(event)">站点链接</div>
   <div class="menu-content">
@@ -47,7 +42,7 @@
     <a href="https://palworld.caimogu.cc/breed.html">幻兽帕鲁百科网</a><br>
     <a href="https://tool.pc.wiki/">PC软硬件工具网</a><br>
     <a href="https://mikanani.me/">蜜柑计划</a><br>
-    <a href="https://www.6k6k.cn/">ai制图网</a>
+    <a href="https://www.6k6k.cn/">ai制图网</a><br>
   </div>
   <div class="menu-item" onclick="toggleMenu(event)">工具软件</div>
   <div class="menu-content">
@@ -77,9 +72,17 @@
         JavaScript教程</a> <br>
     <a href="https://www.bilibili.com/video/BV1eh41177Fy/?spm_id_from=333.999.0.0&vd_source=e213ac745cfc631a26cd61aaa442e973">
         GitHub静态Web网页搭建教程</a> <br>
+    <a href="https://vuejs.org/guide/quick-start.html">
+        Vue.js
+    <a href="https://senior-frontend.pages.dev/guide/">Web全栈指南</a><br>
+    </a>
     <a href="https://font.chinaz.com/">字体网站</a> <br>
   </div>
 </div>
+<p align="center">
+  <button>
+      <h3><a href="https://mym04.github.io/">李府</a></h3>
+  </button>
  <!--切割线-->
 <script>
 function toggleMenu(e) {
