@@ -1,67 +1,66 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>吾族</title>
-<style>
-  .menu {
-    width: 200px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吾族</title>
+<style>/*  */
+/* 字体 */
+  .gaoyangjiujia{
+    font-family:ziti;
+    font-size: 60px;
+    color: #000000;
   }
-  .menu-item {
-    padding: 10px;
-    cursor: pointer;
-    background-color: #f9f9f9;
-    border-bottom: 1px solid #eee;
-  }
-  .menu-content {
-    display: none;
-    padding: 10px;/*元素内边距宽*/
-    background-color: #ddd;
-  }
-.gaoyangjiujia{
-  font-family:ziti;
-  font-size: 60px;
-  color: #000000;
-}
   @font-face {
     font-family:ziti;
     src: url(行楷繁体.ttf);
   }
+/* 行并列 */
+  .inline-div {
+    display: inline;
+    margin-left:50px; /* 可以添加间距 */
+    margin-right:50px;
+  }
+/* 切割线 */
+.content-section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 600px;
+  height: 400px;
+  margin-bottom: 10px;
+}
 </style>
 </head>
-<body>
 <!--切割线-->
+<body>
 <p class="gaoyangjiujia" align="center">高阳旧家</p>
-<h1><p align="center">吾族工具箱</p></h1>
-<div class="menu">
-  <div class="menu-item" onclick="toggleMenu(event)">站点链接</div>
-  <div class="menu-content">
+<div id="content-container" align="center">
+  <button onclick="switchContent('content-1')">常规网站包</button>
+  <button onclick="switchContent('content-2')">软件工具箱</button>
+  <button onclick="switchContent('content-3')">Web前端目录</button>
+  <div id="content-1" class="content-section">
     <a href="https://www.bilibili.com/">哔哩哔哩</a><br>
     <a href="https://palworld.caimogu.cc/breed.html">幻兽帕鲁百科网</a><br>
     <a href="https://tool.pc.wiki/">PC软硬件工具网</a><br>
     <a href="https://mikanani.me/">蜜柑计划</a><br>
-    <a href="https://www.6k6k.cn/">ai制图网</a><br>
+    <a href="https://www.6k6k.cn/">ai扣图</a><br>
   </div>
-  <div class="menu-item" onclick="toggleMenu(event)">工具软件</div>
-  <div class="menu-content">
+  <div id="content-2" class="content-section" style="display: none;">
     <a href="https://store.steampowered.com/">
-        Steam</a><br>
+      Steam官网</a><br>
     <a href="https://www.google.com/intl/en_hk/chrome/">
-        谷歌浏览器</a><br>
+      谷歌官网</a><br>
     <a href="https://dokidokiweb.com">
-        SakuraCat加速器</a><br>
+      SakuraCat加速器</a><br>
     <a href="https://www.bandisoft.com/bandizip/">
-        Bandizip软件</a><br>
+      Bandizip软件</a><br>
     <a href="https://www.bilibili.com/video/BV1iL4y1F7tn/?spm_id_from=333.999.0.0&vd_source=e213ac745cfc631a26cd61aaa442e973">
-        Microsolf Office全套软件安装教程</a> <br>
+      Microsolf Office全套软件安装教程</a> <br>
     windos商店直搜:<br>
     TranslucentTB(桌面透明任务栏) <br>
     Twinkle Tray(屏幕亮度调节软件) <br>
   </div>
-  <div class="menu-item" onclick="toggleMenu(event)">Web前端学习目录</div>
-  <div class="menu-content">
+  <div id="content-3" class="content-section" style="display: none;">
     <a href="https://www.w3school.com.cn/">W3school百科</a> <br>
     <a href="https://code.visualstudio.com/">VScode软件</a> <br>
     <a href="https://www.bilibili.com/video/BV1jf4y1J7Ms/?p=1&vd_source=e213ac745cfc631a26cd61aaa442e973">
@@ -83,17 +82,23 @@
   <button>
       <h3><a href="https://mym04.github.io/">李府</a></h3>
   </button>
- <!--切割线-->
+<!--切割线-->
+<div align="center">
+  <div class="inline-div"></div>
+  <div class="inline-div"></div>
+  <div class="inline-div"></div>
+</div>
+
+</body>
+
+<!--切割线-->
 <script>
-function toggleMenu(e) {
-  var menuContent = e.target.nextElementSibling;
-  if (menuContent.style.display === "block") {
-    menuContent.style.display = "none";
-  } else {
-    menuContent.style.display = "block";
-  }
+function switchContent(id) {
+  document.getElementById('content-1').style.display = 'none';
+  document.getElementById('content-2').style.display = 'none';
+  document.getElementById('content-3').style.display = 'none';
+  document.getElementById(id).style.display = 'block';
 }
 </script>
- 
 </body>
 </html>
