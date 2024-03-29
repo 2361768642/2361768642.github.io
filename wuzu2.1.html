@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>吾族</title>
+<style>/*  */
+/* 字体 */
+  .gaoyangjiujia{
+    font-family:ziti;
+    font-size: 60px;
+    color: #000000;
+  }
+  @font-face {
+    font-family:ziti;
+    src: url(行楷繁体.ttf);
+  }
+/* 行并列 */
+  .inline-div {
+    display: inline;
+    margin-left:50px; /* 可以添加间距 */
+    margin-right:50px;
+  }
+/* 切割线 */
+.content-section {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 600px;
+  height: 400px;
+  margin-bottom: 10px;
+}
+</style>
+</head>
+<!--切割线-->
+<body>
+<p class="gaoyangjiujia" align="center">高阳旧家</p>
+<div id="content-container" align="center">
+  <button onclick="switchContent('content-1')">常规网站包</button>
+  <button onclick="switchContent('content-2')">软件工具箱</button>
+  <button onclick="switchContent('content-3')">Web前端目录</button>
+  <div id="content-1" class="content-section">
+    <a href="https://www.bilibili.com/">哔哩哔哩</a><br>
+    <a href="https://palworld.caimogu.cc/breed.html">幻兽帕鲁百科网</a><br>
+    <a href="https://tool.pc.wiki/">PC软硬件工具网</a><br>
+    <a href="https://mikanani.me/">蜜柑计划</a><br>
+    <a href="https://www.6k6k.cn/">ai扣图</a><br>
+  </div>
+  <div id="content-2" class="content-section" style="display: none;">
+    <a href="https://store.steampowered.com/">
+      Steam官网</a><br>
+    <a href="https://www.google.com/intl/en_hk/chrome/">
+      谷歌官网</a><br>
+    <a href="https://dokidokiweb.com">
+      SakuraCat加速器</a><br>
+    <a href="https://www.bandisoft.com/bandizip/">
+      Bandizip软件</a><br>
+    <a href="https://www.bilibili.com/video/BV1iL4y1F7tn/?spm_id_from=333.999.0.0&vd_source=e213ac745cfc631a26cd61aaa442e973">
+      Microsolf Office全套软件安装教程</a> <br>
+    windos商店直搜:<br>
+    TranslucentTB(桌面透明任务栏) <br>
+    Twinkle Tray(屏幕亮度调节软件) <br>
+  </div>
+  <div id="content-3" class="content-section" style="display: none;">
+    <a href="https://www.w3school.com.cn/">W3school百科</a> <br>
+    <a href="https://code.visualstudio.com/">VScode软件</a> <br>
+    <a href="https://www.bilibili.com/video/BV1jf4y1J7Ms/?p=1&vd_source=e213ac745cfc631a26cd61aaa442e973">
+        HTML教程</a> <br>
+    <a href="https://www.bilibili.com/video/BV1Ci4y1W7H7/?spm_id_from=333.999.0.0&vd_source=e213ac745cfc631a26cd61aaa442e973">
+        CSS教程</a> <br> 
+    <a href="https://www.bilibili.com/video/BV15L4y1a7or/?spm_id_from=333.999.0.0&vd_source=e213ac745cfc631a26cd61aaa442e973">
+        JavaScript教程</a> <br>
+    <a href="https://www.bilibili.com/video/BV1eh41177Fy/?spm_id_from=333.999.0.0&vd_source=e213ac745cfc631a26cd61aaa442e973">
+        GitHub静态Web网页搭建教程</a> <br>
+    <a href="https://vuejs.org/guide/quick-start.html">
+        Vue.js</a><br>
+    <a href="https://senior-frontend.pages.dev/guide/">
+      Web全栈指南</a><br>
+    <a href="https://font.chinaz.com/">字体网站</a> <br>
+  </div>
+</div>
+<p align="center">
+  <button>
+      <h3><a href="https://mym04.github.io/">李府</a></h3>
+  </button>
+<!--切割线-->
+<div align="center">
+  <div class="inline-div"></div>
+  <div class="inline-div"></div>
+  <div class="inline-div"></div>
+</div>
+
+</body>
+
+<!--切割线-->
+<script>
+function switchContent(id) {
+  document.getElementById('content-1').style.display = 'none';
+  document.getElementById('content-2').style.display = 'none';
+  document.getElementById('content-3').style.display = 'none';
+  document.getElementById(id).style.display = 'block';
+}
+</script>
+</body>
+</html>
