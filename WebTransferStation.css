@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(240, 240, 240);
+}
+
+a {
+    text-decoration: none;
+}
+
+.WebTransferStation {
+    width: 800px;
+    height: auto;
+    margin: 0 auto 0 auto;
+}
+
+.introduce {
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 40px auto 10px auto;
+}
+
+#WebStation-box {
+    width: 800px;
+    display: flex;      /*使用 Flexbox 布局*/
+    flex-wrap: wrap;    /*允许子元素自动换行*/
+    gap: 10px;          /*设置子元素之间的间距*/
+}
+
+.WebStation {
+    width: 152px;
+    height: 40px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    position: relative;
+} .WebStation:hover {
+    background-color: #7DBFFF;
+}
