@@ -36,8 +36,8 @@ var vm = new Vue({
                 webName: '李府',
                 webUrl: 'https://mym04.github.io/',
             },{
-                webName: '',
-                webUrl: '',
+                webName: 'HackWay技术学习路线',
+                webUrl: 'https://hackway.org/',
             },
         ]
     },
