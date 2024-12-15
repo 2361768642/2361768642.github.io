@@ -1,5 +1,7 @@
 body {
-    background-color: rgb(240, 240, 240);
+    background: linear-gradient(to bottom, #a1c4fd, #c2e9fb); /*从上到下的渐变*/
+    height: 100vh; /*确保背景覆盖整个视口高度*/
+    margin: 0; /*去除默认的body边距*/
 }
 
 a {

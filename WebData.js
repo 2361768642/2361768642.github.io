@@ -21,23 +21,26 @@ var vm = new Vue({
                 webName: 'GitHub',
                 webUrl: 'https://github.com/',
             },{
-                webName: 'ChatGPT',
-                webUrl: 'https://chatgpt.com/',
-            },{
-                webName: 'Electron',
-                webUrl: 'https://www.electronjs.org/zh/',
-            },{
                 webName: 'Excalidraw',
                 webUrl: 'https://excalidraw.com/',
             },{
                 webName: '蜜柑计划',
                 webUrl: 'https://mikanani.me/',
             },{
-                webName: '李府',
-                webUrl: 'https://mym04.github.io/',
-            },{
                 webName: 'HackWay技术路线',
                 webUrl: 'https://hackway.org/',
+            },{
+                webName: 'ChatGPT',
+                webUrl: 'https://chatgpt.com/',
+            },{
+                webName: 'Vue',
+                webUrl: 'https://cn.vuejs.org/',
+            },{
+                webName: 'Electron',
+                webUrl: 'https://www.electronjs.org/zh/',
+            },{
+                webName: '李府',
+                webUrl: 'https://mym04.github.io/',
             },
         ]
     },
