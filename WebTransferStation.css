@@ -39,4 +39,5 @@ a {
     position: relative;
 } .WebStation:hover {
     background-color: rgb(250, 200, 215);
+    /*background-color: #7DBFFF;*/
 }

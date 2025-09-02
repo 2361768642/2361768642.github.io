@@ -6,14 +6,6 @@ var vm = new Vue({
             window.open(webUrl, '_blank')
         }
     },
-    data: {// <-- Vue.js -->
-var vm = new Vue({
-    el: '#WebStation-box',
-    methods: {
-        jumpWeb: function(webUrl) {
-            window.open(webUrl, '_blank')
-        }
-    },
     data: {
         webData: [
             { // 第1行
